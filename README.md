@@ -1,4 +1,4 @@
-![Discard-Patterns](https://github.com/user-attachments/assets/e4e6d901-c4e8-4b35-8f59-de5a67a45b9c)# Discard Patterns (`_`) in C#
+# Discard Patterns (`_`) in C#
 
 Ever come across the underscore (`_`) in C# and wondered what it does? It's not just a variable name—it's a **discard pattern** that helps write cleaner, more efficient code! 🚀
 
@@ -18,15 +18,13 @@ The discard pattern was introduced in **C# 7.0** and has since been enhanced in 
 Instead of creating a useless variable for `out`, we discard it!
 
 ### Deconstructing Tuples
-<img src="https://github.com/user-attachments/assets/3130be9f-ba1c-4176-9a39-3b415a26d1d7" alt="Discard-Patterns" width="400">
+<img src="https://github.com/user-attachments/assets/3130be9f-ba1c-4176-9a39-3b415a26d1d7" alt="Discard-Patterns-Tupples" width="400">
 
 
 We discard the middle values since we don't need them.
 
 ### Switch Expressions
-
-![Discard-Patterns](https://github.com/user-attachments/assets/8be198b6-1001-403c-a620-0b510666f159)
-
+<img src="https://github.com/user-attachments/assets/8be198b6-1001-403c-a620-0b510666f159" alt="Discard-Patterns" width="400">
 Here, `_` acts as a default case for switch.
 
 ## 🚀 Why Use Discards?
