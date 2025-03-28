@@ -1,66 +1,43 @@
-# Discard Patterns (`_`) in C# 🚀
+# Discard Patterns (`_`) in C#
 
-Ever come across the underscore (`_`) in C# and wondered what it does? It's not just a variable name—it's a **discard pattern** that helps write cleaner, more efficient code!
+Ever come across the underscore (`_`) in C# and wondered what it does? It's not just a variable name—it's a **discard pattern** that helps write cleaner, more efficient code! 🚀
 
 ## 🔹 What is a Discard?
 
 A **discard** (`_`) is a placeholder that tells the compiler, *"I'm intentionally ignoring this value."* It improves readability and avoids unnecessary variable allocations.
 
-## 🔹 Background
+## 🔹 Introduced in C# 7.0
 
-- **Introduced in C# 7.0**
-- Continuously enhanced in later versions of the language
+The discard pattern was introduced in **C# 7.0** and has since been enhanced in later versions.
 
-## 🔹 Usage Examples
+## 🔹 Where Can You Use It?
 
-### 1. Ignoring Unused Return Values
+### Ignoring Unused Return Values
 
-When using methods with `out` parameters, you can discard values you don't need:
+![TryParse Discard](/tryparsediscard.png)
 
-```csharp
-if (int.TryParse(someString, out _))
-{
-    // Parse successful, but we don't care about the parsed value
-}
-```
+Instead of creating a useless variable for `out`, we discard it!
 
-### 2. Deconstructing Tuples
+### Deconstructing Tuples
 
-Easily ignore tuple elements you don't want to use:
+![Tuple Discards](./Tupple-Discard-Patterns.png)
 
-```csharp
-var (first, _, last) = GetPersonInfo();
-// Discards the middle value
-```
+We discard the middle values since we don't need them.
 
-### 3. Switch Expressions
+### Switch Expressions
 
-Use `_` as a default case in switch expressions:
+![Switch Discard Patterns](/Discard-Patterns.png)
 
-```csharp
-var result = value switch
-{
-    1 => "One",
-    2 => "Two",
-    _ => "Other"
-};
-```
+Here, `_` acts as a default case for switch.
 
-## 🚀 Benefits of Using Discards
+## 🚀 Why Use Discards?
 
-- ✔ Improves Readability
-- ✔ Reduces Unnecessary Variables Usage
-- ✔ Enhances Code Clarity
+- **✔ Improves Readability**
+- **✔ Reduces Unnecessary Variables Usage**
+- **✔ Enhances Code Clarity**
 
-## 💡 Pro Tip
+Next time you see `_`, don't ignore it—embrace it! 😃
 
-Next time you see `_`, don't ignore it—embrace it! It's a powerful tool for writing more concise and expressive C# code.
+Have you used discard patterns in your projects? Share your experience! ⬇
 
-## 🤝 Contribute
-
-Have you used discard patterns in your projects? Share your experiences! Pull requests and suggestions are welcome.
-
-## 🏷️ Tags
-- #CSharp
-- #DotNet
-- #CodingTips
+#CSharp #DotNet #CodingTips
