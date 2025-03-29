@@ -18,13 +18,13 @@ The discard pattern was introduced in **C# 7.0** and has since been enhanced in 
 Instead of creating a useless variable for `out`, we discard it!
 
 ### Deconstructing Tuples
-<img src="https://github.com/user-attachments/assets/3130be9f-ba1c-4176-9a39-3b415a26d1d7" alt="Discard-Patterns-Tupples" width="400">
+<img src="https://github.com/user-attachments/assets/95a2bb9e-cccc-4cfc-b5f0-3467703ceb62" alt="Discard-Patterns-Tupples" width="400">
 
 
 We discard the middle values since we don't need them.
 
 ### Switch Expressions
-<img src="https://github.com/user-attachments/assets/8be198b6-1001-403c-a620-0b510666f159" alt="Discard-Patterns" width="400">
+<img src="https://github.com/user-attachments/assets/8be198b6-1001-403c-a620-0b510666f159" alt="Discard-Patterns" width="400"><br/>
 Here, `_` acts as a default case for switch.
 
 ## 🚀 Why Use Discards?
